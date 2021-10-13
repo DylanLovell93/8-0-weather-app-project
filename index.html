@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+      <form id="search">
+        <label for="location">Pick a Location</label>
+        <input type="text" id="location" name="location" required />
+        <input type="submit" value="Get Weather" />
+      </form>
+      <aside class="history">
+        <h3>Previous Searches</h3>
+        <ul>
+          No previous searches
+        </ul>
+      </aside>
+    </header>
+    <main class="display">
+      <article id="general">Choose a location to view the weather.</article>
+      <article class="forecast" id="today"></article>
+      <article class="forecast" id="tomorrow"></article>
+      <article class="forecast" id="after"></article>
+    </main>
+    <video id="background-video" autoplay loop muted>
+      <source src="./assets/CloudLoop.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
